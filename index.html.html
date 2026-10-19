@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MITZONE Engine Parts for Your Vehicle</title>
+<meta name="description" content="Find MITZONE engine parts for your vehicle. Browse engine replacement parts by category and check the available product details before ordering.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--blue:#2358a8;--blue2:#2a6df0;--orange:#ff9900;--red:#d4232b;--navy:#0f1f3d;--bar:#1b1d21;--bar2:#25282c;--nav:#3a3d42;--page:#fff;--strip:#f1f3f6;--card:#fff;--text:#2b3340;--muted:#5d6676;--line:#dde1e7;--foot:#23262b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--page:#14171b;--strip:#1b1f24;--card:#1f242a;--text:#e6e9ee;--muted:#a3abb8;--line:#313842;--navy:#fff}}
+:root[data-theme="dark"]{--page:#14171b;--strip:#1b1f24;--card:#1f242a;--text:#e6e9ee;--muted:#a3abb8;--line:#313842;--navy:#fff}
+html{scroll-behavior:smooth;scroll-padding-top:90px;height:auto}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--text);font-family:"Inter",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}
+a[data-href]{cursor:default}
+.w{max-width:1280px;margin:0 auto;padding:0 20px}
+h1,h2,h3{margin:0 0 10px;line-height:1.15;color:var(--navy)}
+h2.t{font-size:clamp(1.7rem,3.2vw,2.5rem);font-weight:800;display:inline-block;padding-bottom:10px;border-bottom:4px solid var(--blue)}
+p{margin:0 0 10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 28px;font:600 1rem/1 "Inter",sans-serif;border:0;cursor:pointer;color:#fff;background:#2a5db0}
+.btn.o{background:var(--orange);color:#111}
+.btn.l{background:transparent;border:2px solid #fff}
+.btn:hover{filter:brightness(1.1)}
+/* header */
+.hd{position:sticky;top:env(safe-area-inset-top,0px);z-index:30}
+.hd::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bar);z-index:31}
+.top{background:var(--bar);color:#fff}
+.top .w{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.soc{display:flex;gap:10px}
+.soc i{width:34px;height:34px;border-radius:50%;background:#fff;color:#111;display:grid;place-items:center;font:700 .8rem/1 "Inter";font-style:normal}
+.promo{color:#1fa2ff;font-size:.95rem}
+.promo b{background:#1d7fe0;color:#fff;padding:7px 14px;margin-left:8px;font-size:.8rem;font-weight:600}
+.main{background:var(--bar2)}
+.main .w{display:flex;align-items:center;gap:16px;padding-top:12px;padding-bottom:12px}
+.logo{font-weight:800;font-size:1.9rem;letter-spacing:.06em;color:var(--blue2);white-space:nowrap}
+.veh{background:#2a5db0;color:#fff;padding:0 22px;height:56px;display:flex;align-items:center;gap:8px;font-weight:600;white-space:nowrap}
+.sb{flex:1;display:flex;background:#fff;height:56px;border:1px solid #fff;min-width:0}
+.sb u{background:#101a33;color:#fff;text-decoration:none;display:grid;place-items:center;padding:0 18px;font-weight:600;margin:3px}
+.sb input{flex:1;border:0;padding:0 14px;font:1rem "Inter",sans-serif;outline:0;min-width:0;color:#222;background:#fff}
+.sb button{width:64px;border:0;background:#9aa3b2;color:#fff;font-size:1.1rem;cursor:pointer}
+.ic{display:flex;gap:10px}
+.ic span{background:#3a3e44;color:#fff;border-radius:6px;padding:8px 12px;font-size:.85rem;text-align:center;min-width:76px}
+.nav{background:var(--nav);color:#fff}
+.nav .w{display:flex;align-items:center;height:58px;gap:34px;font-size:1.05rem;font-weight:500;overflow-x:auto;white-space:nowrap}
+.nav .em{margin-left:auto}
+@media(max-width:980px){.ic,.promo,.veh span{display:none}.nav .w{gap:22px}.soc i:nth-child(n+3){display:none}}
+@media(max-width:640px){.logo{font-size:1.4rem}.veh{display:none}.top .w{height:46px}}
+/* hero */
+.hero{background:radial-gradient(ellipse at 75% 40%,#8b909a 0,#3a3f4a 35%,#0d0f13 75%);color:#fff;padding:80px 0 90px}
+.hero h1{color:#fff;font-size:clamp(2.2rem,6vw,4.4rem);font-weight:800;letter-spacing:-.01em;max-width:900px;text-transform:uppercase}
+.hero p{max-width:640px;font-size:1.15rem;color:#e3e6ec}
+.cta{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px}
+.q{background:var(--strip);padding:26px 0;border-bottom:1px solid var(--line)}
+.q .sb{border:2px solid var(--blue);max-width:900px;margin:0 auto}
+#note{text-align:center;color:var(--muted);margin:12px 0 0;min-height:1.4em;font-size:.95rem}
+/* sections */
+section{padding:72px 0}
+.alt{background:var(--strip)}
+.ctr{text-align:center}
+.sub{color:var(--muted);font-size:1.15rem;margin-top:14px}
+.g{display:grid;gap:22px;margin-top:36px}
+.g4{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.trust{padding:44px 0}
+.trust .g{margin:0;gap:0}
+.trust .it{text-align:center;padding:10px 24px;border-right:1px solid #222}
+.trust .it:last-child{border:0}
+.trust .it div{width:70px;height:70px;border-radius:50%;border:3px solid var(--blue);margin:0 auto 12px;display:grid;place-items:center;color:var(--blue);font-weight:800;font-size:1.4rem}
+.trust h3{font-size:1.5rem;font-weight:700}
+.trust p{color:var(--muted);font-size:.95rem}
+.cat{min-height:340px;background:linear-gradient(180deg,#2d8ae6,#0d3d8c 60%,#05122b);color:#fff;padding:26px;display:flex;flex-direction:column;justify-content:flex-end}
+.cat h3{color:#fff;font-size:1.8rem;font-weight:700}
+.cat p{color:#dbe6f7;font-size:.95rem}
+.cat .btn{align-self:flex-start;margin-bottom:auto;padding:13px 18px}
+.pc{background:var(--card);border-radius:12px;box-shadow:0 2px 12px rgba(20,30,60,.1);padding:22px;position:relative;display:flex;flex-direction:column}
+.sale{position:absolute;left:18px;top:0;background:var(--red);color:#fff;font-weight:800;font-size:.9rem;padding:8px 18px 14px;clip-path:polygon(0 0,100% 0,100% 100%,50% 82%,0 100%)}
+.pc .rt{text-align:right;font-weight:600}
+.pc .img{height:150px;margin:10px 0 16px;border-radius:8px;background:linear-gradient(135deg,#e7ebf1,#c9d0db);display:grid;place-items:center;color:var(--blue);font-weight:800;letter-spacing:.08em}
+.pills{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
+.pills span{background:#e3edfb;color:#2358a8;border-radius:99px;padding:4px 14px;font-size:.85rem}
+.pills span+span{background:#e3f8ea;color:#17803d}
+.pc h3{text-align:center;font-size:1.15rem;font-weight:500;color:var(--text)}
+.pc .pn{text-align:center;color:var(--muted);font-size:.9rem}
+.pr{text-align:center;color:var(--red);font-weight:800;font-size:1.6rem;margin-top:auto;padding-top:8px}
+.st{background:var(--card);padding:28px;border-top:4px solid var(--blue)}
+.st .n{width:42px;height:42px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:700;margin-bottom:12px}
+.blog{background:var(--card);box-shadow:0 2px 12px rgba(20,30,60,.08);display:flex;flex-direction:column}
+.blog .im{height:170px;background:linear-gradient(135deg,#1b2a4a,#2358a8);color:#fff;display:grid;place-items:center;font-weight:800;letter-spacing:.1em;text-align:center;padding:10px}
+.blog .bd{padding:20px;display:flex;flex-direction:column;flex:1}
+.blog small{color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.blog h3{font-size:1.1rem;margin-top:6px}
+.blog .rm{margin-top:auto;color:var(--blue);font-weight:600}
+.head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.faq details{background:var(--card);border:1px solid var(--line);padding:18px 22px;margin-bottom:12px}
+.faq summary{cursor:pointer;font-weight:600;color:var(--navy)}
+.faq p{color:var(--muted);margin:12px 0 0}
+.nl{background:var(--blue);color:#fff;padding:44px 0}
+.nl .w{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.nl h2{color:#fff;font-size:2rem;margin:0}
+.nl form{display:flex;border-radius:99px;overflow:hidden;background:#fff;flex:1;max-width:680px}
+.nl input{flex:1;border:0;padding:18px 24px;font:1.05rem "Inter";outline:0;min-width:0;color:#222;background:#fff}
+.nl button{background:#101a33;color:#fff;border:0;padding:0 28px;font:600 1rem "Inter";cursor:pointer}
+footer{background:var(--foot);color:#c4c9d2;padding:56px 0 24px}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+footer h4{color:#fff;font-size:1.3rem;margin:0 0 20px}
+footer li{list-style:none;margin-bottom:14px}
+footer ul{padding:0;margin:0}
+footer .cp{border-top:1px solid #3a3f47;margin-top:36px;padding-top:20px;font-size:.95rem}
+@media(max-width:800px){footer .cols{grid-template-columns:1fr 1fr}.trust .it{border:0}}
+.hide{display:none!important}
+</style>
+</head>
+<body>
+<div class="hd">
+  <div class="top"><div class="w">
+    <div class="soc"><i>f</i><i>t</i><i>X</i><i>in</i></div>
+    <div class="promo">Subscribe to enjoy 10% off for first order!<b>SUBSCRIBE</b></div>
+    <div>🇺🇸 English &nbsp;|&nbsp; <u>Customer Service</u></div>
+  </div></div>
+  <div class="main"><div class="w">
+    <a class="logo" href="#top">MiTZONE</a>
+    <a class="veh" data-href="https://www.mitzoneshop.com/"><span>🚗</span> Add your vehicle →</a>
+    <div class="sb"><u>Search</u><input id="hs" placeholder="Search by part name, part number or vehicle" aria-label="Search"><button type="button" data-go="hs">&#9906;</button></div>
+    <div class="ic"><span>Address</span><span>Account</span><span>Cart<br>$0.00</span></div>
+  </div></div>
+  <div class="nav"><div class="w">
+    <a href="#top">Home</a><a data-href="https://www.mitzoneshop.com/en/products">Category</a><a data-href="#">Classic</a><a data-href="#">Deals</a><a data-href="https://www.mitzoneshop.com/en/faqs">FAQ ▾</a><a data-href="https://www.mitzoneshop.com/en/about-us">About Us</a><a data-href="https://www.mitzoneshop.com/en/wholesale">Wholesale</a><a data-href="https://www.mitzoneshop.com/en/installation-manual">Installation Manual</a>
+    <a class="em" data-href="mailto:service@mitzoneshop.com">✉ service@mitzoneshop.com</a>
+  </div></div>
+</div>
+
+<main id="top">
+<div class="hero"><div class="w">
+  <p style="font-weight:500">OEM Quality | Reliable Performance</p>
+  <h1>MITZONE Engine Parts for Your Vehicle</h1>
+  <p>Find MITZONE engine parts for your vehicle. Browse engine replacement parts by category and check the available product details before ordering.</p>
+  <div class="cta"><a class="btn" data-href="https://www.mitzoneshop.com/en/products">→ Shop Engine Parts</a><a class="btn l" data-href="mailto:service@mitzoneshop.com">Contact Us</a></div>
+</div></div>
+
+<div class="q"><div class="w">
+  <div class="sb"><u>Search</u><input id="ms" placeholder="Search parts, part numbers, vehicles or blog posts…" aria-label="Search the page"><button type="button" data-go="ms">&#9906;</button></div>
+  <p id="note"></p>
+</div></div>
+
+<section class="alt trust s" style="padding:44px 0"><div class="w"><div class="g g4">
+  <div class="it"><div>S</div><h3>Shipping</h3><p>Costs, delivery estimates, methods and restrictions are listed in the shipping policy.</p></div>
+  <div class="it"><div>R</div><h3>Returns</h3><p>Check the return policy before ordering for eligibility and refund conditions.</p></div>
+  <div class="it"><div>W</div><h3>Warranty</h3><p>See the warranty policy for coverage details and claims.</p></div>
+  <div class="it"><div>$</div><h3>Wholesale</h3><p>Contact service@mitzoneshop.com for wholesale inquiries.</p></div>
+</div></div></section>
+
+<section id="categories"><div class="w">
+  <div class="ctr"><h2 class="t">Shop Replacement Engine Components</h2><p class="sub">Find the part category you need and review the product details before placing your order.</p></div>
+  <div class="g g4">
+    <a class="cat s" data-href="https://www.mitzoneshop.com/en/products/valve-cover"><span class="btn o">Shop Valve Covers</span><h3>Valve Covers</h3><p>Browse valve covers for listed vehicle applications. Check each product’s details before choosing a part.</p></a>
+    <a class="cat s" data-href="https://www.mitzoneshop.com/en/products/coolant-thermostat-housing"><span class="btn o">Shop Housings</span><h3>Coolant Thermostat Housings</h3><p>Find coolant thermostat housings for listed vehicle applications. Review the available product information before ordering.</p></a>
+    <a class="cat s" data-href="https://www.mitzoneshop.com/en/products/intake-manifold"><span class="btn o">Shop Manifolds</span><h3>Intake Manifolds</h3><p>Browse intake manifolds and check the product details to identify the part you need.</p></a>
+    <a class="cat s" data-href="https://www.mitzoneshop.com/en/products/oil-pan"><span class="btn o">Shop Oil Pans</span><h3>Oil Pans</h3><p>Explore available oil pans and review the product information before making your selection.</p></a>
+  </div>
+  <div class="ctr" style="margin-top:32px"><a class="btn" data-href="https://www.mitzoneshop.com/en/products">Browse All Categories →</a></div>
+</div></section>
+
+<section class="alt" id="featured"><div class="w">
+  <div class="ctr"><h2 class="t">Featured Engine Parts</h2><p class="sub">Explore available products from MITZONE. Check each listing for its part number, price, and vehicle compatibility information where provided.</p></div>
+  <div class="g g3">
+    <a class="pc s" data-href="https://www.mitzoneshop.com/product/valve-cover-nissan-13270ja00a-13264ja00a"><span class="sale">SALE!</span><div class="rt">★ 5.0</div><div class="img">VALVE COVER</div><div class="pills"><span>Valve Cover</span><span>● IN STOCK</span></div><h3>Valve Cover for 2007–2015 Nissan 2.5L</h3><p class="pn">Part No: 13270JA00A / 13264JA00A</p><div class="pr">USD 36.59</div></a>
+    <a class="pc s" data-href="https://www.mitzoneshop.com/product/intake-manifold-benz-2721402401"><span class="sale">SALE!</span><div class="rt">★ 5.0</div><div class="img">INTAKE MANIFOLD</div><div class="pills"><span>Intake Manifold</span><span>● IN STOCK</span></div><h3>Intake Manifold for Mercedes-Benz 3.5L</h3><p class="pn">Part No: 2721402401</p><div class="pr">USD 162.99</div></a>
+    <a class="pc s" data-href="https://www.mitzoneshop.com/product/coolant-thermostat-housing-chevy-buick-25200455"><span class="sale">SALE!</span><div class="rt">★ 5.0</div><div class="img">THERMOSTAT HOUSING</div><div class="pills"><span>Coolant Thermostat Housing</span><span>● IN STOCK</span></div><h3>Coolant Thermostat Assembly for Chevy Buick</h3><p class="pn">Part No: 25200455</p><div class="pr">USD 17.99</div></a>
+  </div>
+</div></section>
+
+<section id="guide"><div class="w">
+  <div class="ctr"><h2 class="t">How to Choose the Right Part</h2></div>
+  <div class="g g3">
+    <div class="st s"><div class="n">1</div><h3>Check Your Vehicle Details</h3><p>Identify your vehicle’s year, make, model, and engine size. These details help narrow down the part you need.</p></div>
+    <div class="st s"><div class="n">2</div><h3>Compare Part Numbers</h3><p>Check the part number on the product listing. Compare it with your existing part or vehicle parts documentation.</p></div>
+    <div class="st s"><div class="n">3</div><h3>Confirm Compatibility Before Ordering</h3><p>Review the available product specifications. If you’re unsure whether a part matches your vehicle, contact service@mitzoneshop.com before ordering.</p></div>
+  </div>
+</div></section>
+
+<section class="alt" id="blog"><div class="w">
+  <div class="head"><h2 class="t">Latest from the MITZONE Blog</h2><a class="btn" data-href="https://www.mitzoneshop.com/en/blog">View All Posts →</a></div>
+  <div class="g g3" id="bg"></div>
+</div></section>
+
+<section id="about"><div class="w" style="max-width:860px">
+  <div class="s"><h2 class="t">About MITZONE</h2>
+  <p class="sub" style="font-size:1.05rem">MITZONE is an online store offering engine replacement parts. Its product categories include valve covers, coolant thermostat housings, intake manifolds, and oil pans. Browse the available products to find the part you need. For product questions or wholesale inquiries, contact service@mitzoneshop.com.</p></div>
+</div></section>
+
+<section class="alt" id="faq"><div class="w faq" style="max-width:860px">
+  <div class="ctr"><h2 class="t">Questions Before You Buy</h2></div><div style="margin-top:32px">
+  <details class="s" open><summary>How do I find the right part for my vehicle?</summary><p>Start with your vehicle’s year, make, model, and engine size. Compare these details with the product information and check the part number where available. If you cannot confirm compatibility, contact service@mitzoneshop.com before ordering.</p></details>
+  <details class="s"><summary>What shipping options does MITZONE offer?</summary><p>Check the shipping policy for current shipping costs, delivery estimates, available methods and geographic restrictions before placing your order.</p></details>
+  <details class="s"><summary>Can I return a part if it doesn’t fit?</summary><p>Review the return policy before ordering for eligibility, return periods, shipping costs and refund conditions. If you receive the wrong part or need help with a return, contact service@mitzoneshop.com.</p></details>
+  <details class="s"><summary>Does MITZONE offer warranty coverage and wholesale pricing?</summary><p>See the warranty policy and wholesale page for details. You can also contact service@mitzoneshop.com about warranty claims or wholesale purchases.</p></details></div>
+</div></section>
+
+<section style="background:var(--blue);color:#fff;text-align:center;padding:60px 0"><div class="w">
+  <h2 style="color:#fff;font-size:2.2rem">Need Help Finding a Part?</h2>
+  <p>Check the product details before ordering. If you need help identifying a part or have a wholesale inquiry, contact MITZONE.</p>
+  <div class="cta" style="justify-content:center"><a class="btn o" data-href="https://www.mitzoneshop.com/en/products">→ Shop Engine Parts</a></div>
+  <p style="margin-top:18px">Contact: service@mitzoneshop.com</p>
+</div></section>
+</main>
+
+<div class="nl"><div class="w"><div><h2>Join Our Newsletter</h2><p style="margin:8px 0 0">Subscribe for product updates and the latest offers.</p></div>
+  <form onsubmit="return false"><input type="email" placeholder="Enter email address" aria-label="Email"><button>SUBSCRIBE ↗</button></form></div></div>
+
+<footer><div class="w">
+  <div class="cols">
+    <div><div class="logo" style="margin-bottom:16px">MiTZONE</div><p style="max-width:420px;font-size:1.05rem">MITZONE is a performance parts shop dedicated to diesel truck enthusiasts who demand power, efficiency, and reliability.</p><p>✉ service@mitzoneshop.com</p><div class="soc"><i>f</i><i>t</i><i>X</i><i>in</i></div></div>
+    <div><h4>Our Products</h4><ul><li>Valve Cover</li><li>Coolant Thermostat Housing</li><li>Intake Manifold</li><li>Oil Pan</li></ul></div>
+    <div><h4>Help</h4><ul><li>Help Center</li><li>Membership Rules</li><li>Return Policy</li><li>Shipping Policy</li><li>Warranty Policy</li><li>Payment Policy</li><li>Terms Of Use</li></ul></div>
+    <div><h4>Information</h4><ul><li>About Us</li><li>Wholesale</li><li>My Orders</li><li>My Account</li><li>FAQ</li><li>Blog</li></ul></div>
+  </div>
+  <div class="cp">© 2026 MITZONE. All rights reserved.</div>
+</div></footer>
+
+<script>
+// Homepage content (categories, products, blogs, buttons) is clickable. Header menu and footer stay inactive except Home.
+function act(){document.querySelectorAll("main a[data-href]").forEach(function(a){var h=a.getAttribute("data-href");if(h&&h!=="#"){a.href=h;if(h.indexOf("http")===0){a.target="_blank";a.rel="noopener"}a.style.cursor="pointer"}})}
+// Blog posts, newest first. Add a new post at the TOP of this list.
+var posts=[
+ {t:"When Do You Need to Replace the Intake Manifold? Symptoms & Solutions",c:"Intake Manifold",e:"Learn the warning signs of a failing intake manifold and what to do about them."},
+ {t:"What Is a Valve Cover? Parts, Function, and Why It Matters",c:"Valve Cover",e:"A simple explanation of what a valve cover does and why it matters for your engine."},
+ {t:"MITZONE Complete Valve Cover Kit: Everything You Need for a Leak-Free Install",c:"Installation",e:"What comes in a complete valve cover kit and how it supports a clean installation."}];
+var bg=document.getElementById("bg");
+posts.forEach(function(p,i){var d=document.createElement("a");d.className="blog s";d.setAttribute("data-href","https://www.mitzoneshop.com/en/blog");
+ var im=document.createElement("div");im.className="im";im.textContent=p.c.toUpperCase();
+ var b=document.createElement("div");b.className="bd";
+ var s=document.createElement("small");s.textContent=(i===0?"Latest · ":"")+p.c;
+ var h=document.createElement("h3");h.textContent=p.t;
+ var e=document.createElement("p");e.style.color="var(--muted)";e.textContent=p.e;
+ var r=document.createElement("span");r.className="rm";r.textContent="Read more →";
+ b.append(s,h,e,r);d.append(im,b);bg.appendChild(d)});
+act();
+// Search: filters cards on this page
+var items=[].slice.call(document.querySelectorAll(".s")),note=document.getElementById("note"),ins=[document.getElementById("hs"),document.getElementById("ms")];
+function run(q){q=q.trim().toLowerCase();var n=0;
+ items.forEach(function(el){var m=!q||el.textContent.toLowerCase().indexOf(q)>-1;el.classList.toggle("hide",!m);if(q&&m)n++});
+ note.textContent=q?(n?n+" result"+(n>1?"s":"")+" for “"+q+"”":"No results for “"+q+"”. Contact service@mitzoneshop.com for help finding a part."):"";
+ ins.forEach(function(i){if(i.value!==q&&document.activeElement!==i)i.value=q});
+ if(q){document.querySelector(".q").scrollIntoView({block:"start"})}}
+ins.forEach(function(i){i.addEventListener("input",function(){run(i.value)});i.addEventListener("keydown",function(e){if(e.key==="Enter")run(i.value)})});
+document.querySelectorAll("[data-go]").forEach(function(b){b.addEventListener("click",function(){run(document.getElementById(b.dataset.go).value)})});
+</script>
+</body>
+</html>
